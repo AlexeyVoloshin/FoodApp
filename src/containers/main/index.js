@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { View, Text, Image, AppRegistry } from 'react-native';
+import { View, Text, Image, AppRegistry, ScrollView } from 'react-native';
 import FoodItem from '../../components/FoodItem';
 import { Actions } from 'react-native-router-flux';
+import Like from '../../components/Like';
 const StyledTextheader = styled.Text`
   background-color: #ef966a;
   margin-bottom: 30;
@@ -35,9 +36,8 @@ const imgUrls = [
 export default class Pagestart extends Component {
   render() {
     return (
+    <ScrollView>
       <Wrapper>
-      
-          <StyledText>Food Items</StyledText>
 
         <Row>
 
@@ -87,6 +87,7 @@ export default class Pagestart extends Component {
           />
         </Row>
       </Wrapper>
+    </ScrollView>
      );
   }
 }

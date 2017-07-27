@@ -8,24 +8,26 @@ import { Action } from 'react-native-router-flux';
 import styled from 'styled-components/native';
 
 const Container = styled.View`
-  flax: 1,
-  justify-content: 'center',
-  align-items: 'center',
-  background-color: '#ef135b',
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef135b;
 `;
 const StyledText = styled.Text`
   fontSize: 25;
-  color: #6c6c6c;
+  color: #000;
   margin-top: 0;
 `;
-const Latest = () => {
+const Popular = () => {
   return (
     <Container>
     <StyledText
-     onPress={()=> Action.read()}
+     onPress={()=> Action.Popular()}
     >
-     Latest
+     Popular
     </StyledText>
+
    </Container>
  );
-}
+};
+export default Popular;
