@@ -34,13 +34,14 @@ export default class Main extends Component {
             title="Shop"
             titleStyle={{color:'#ffffff', fontSize: 25, flex:1, flexDirection:'row', alignItems:'center', alignSelf:'center', }}
         >
-        <Scene
-          key="Login"
-          titleStyle={{color:'#ffffff', fontSize: 18, flexDirection:'row', alignItems:'center', alignSelf:'center',  }}
-          component={Login}
-          title="Login"
-          initial={true}
-        />
+            <Scene
+              key="Login"
+              titleStyle={{color:'#ffffff', fontSize: 18, flexDirection:'row', alignItems:'center', alignSelf:'center',  }}
+              component={Login}
+              title="Login"
+              hideNavBar={true}
+              initial={true}
+            />
           <Scene
             key="tabbar"
             tabs
